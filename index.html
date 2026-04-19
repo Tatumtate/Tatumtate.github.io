@@ -2,43 +2,105 @@
 <html>
 <head>
 <title>Tatum Scott ePortfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.nav {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav a {
+    color: #38bdf8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #38bdf8;
+}
+
+a.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+
 </head>
 
-<body style="font-family: Arial; max-width: 900px; margin: auto;">
+<body>
+
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="cs410.html">CS410</a>
+<a href="algorithms.html">Algorithms</a>
+<a href="database.html">Database</a>
+<a href="codereview.html">Code Review</a>
+</div>
+
+<div class="container">
 
 <h1>Tatum Scott</h1>
 <h2>Computer Science ePortfolio</h2>
 
-<hr>
-
+<div class="card">
 <h2>Professional Self-Assessment</h2>
 
 <p>
-Throughout the Computer Science program, I have developed a strong foundation in software development, problem-solving, and data management. My coursework and project experience have allowed me to build practical applications while gaining a deeper understanding of how systems are designed, implemented, and improved.
+Throughout my Computer Science program, I have developed strong skills in software development,
+problem-solving, and data management. My projects demonstrate my ability to build and enhance
+systems using real-world concepts.
 </p>
 
 <p>
-One of my key strengths is my ability to enhance existing systems. This is demonstrated in my database artifact, where I transformed a basic in-memory customer management system into a persistent application using file-based storage and CRUD operations.
+One of my key strengths is improving existing systems. In my database project, I transformed a
+basic program into a persistent system with full CRUD functionality.
 </p>
 
 <p>
-I also developed strong debugging and problem-solving skills while resolving issues related to file handling, input processing, and system behavior. These challenges improved my ability to analyze and refine code effectively.
+I also developed strong debugging skills by resolving issues with file handling and program behavior.
 </p>
 
-<p>
-This portfolio reflects my growth in software engineering, algorithms, and database development. The included projects demonstrate my ability to build and improve systems while considering real-world constraints.
-</p>
+</div>
 
-<hr>
-
+<div class="card">
 <h2>Projects</h2>
 
-<ul>
-<li><a href="cs410.html">CS 410 Reverse Engineering Project</a></li>
-<li><a href="algorithms.html">Algorithms and Data Structures Enhancement</a></li>
-<li><a href="database.html">Database Integration Enhancement</a></li>
-<li><a href="codereview.html">Code Review</a></li>
-</ul>
+<p><a class="button" href="cs410.html">CS 410 Project</a></p>
+<p><a class="button" href="algorithms.html">Algorithms</a></p>
+<p><a class="button" href="database.html">Database</a></p>
+<p><a class="button" href="codereview.html">Code Review</a></p>
+
+</div>
+
+</div>
 
 </body>
 </html>

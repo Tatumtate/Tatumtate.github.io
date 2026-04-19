@@ -28,18 +28,50 @@ body { margin:0; font-family:Arial; background:#0f172a; color:#e2e8f0; }
 <div class="card">
 <h1>CS 410 Reverse Engineering</h1>
 
-<h2>Overview</h2>
-<p>This project focused on analyzing an existing system to understand its structure and logic.</p>
+<h2>Detailed Code Analysis</h2>
 
-<h2>Code</h2>
-<a href="https://github.com/Tatumtate/CS-410/blob/main/CS410ProjectTwo.cpp" target="_blank">
-View Code on GitHub
-</a>
-
-<h2>Narrative</h2>
 <p>
-I analyzed an existing system to understand its design and functionality. This improved my
-ability to read and evaluate code.
+The original code contained several security and design vulnerabilities that were identified and improved throughout the project.
+</p>
+
+<ul>
+
+<li>
+<strong>Global Variables Issue:</strong>
+The original design relied on global variables for user input and permission levels. This was corrected by moving these variables into the main function, improving encapsulation and reducing unintended side effects.
+</li>
+
+<li>
+<strong>Weak Authentication:</strong>
+The authentication system originally accepted any input without validation. A basic validation check was added to ensure that usernames and passwords meet minimum length requirements. While not fully secure, this demonstrates improved input validation practices.
+</li>
+
+<li>
+<strong>Information Disclosure:</strong>
+The system previously revealed too much information when authentication failed. This was corrected by using a generic error message, preventing potential attackers from gaining insight into system behavior.
+</li>
+
+<li>
+<strong>Input Validation:</strong>
+User input was not validated, which could cause crashes or undefined behavior. Input validation was added using cin.fail(), along with clearing and ignoring invalid input to maintain program stability.
+</li>
+
+<li>
+<strong>Error Handling Improvements:</strong>
+The program now handles invalid input more gracefully, ensuring the system does not break when unexpected data is entered.
+</li>
+
+<li>
+<strong>Program Structure:</strong>
+The system was improved by separating functionality into distinct functions, making the code easier to read, maintain, and expand.
+</li>
+
+</ul>
+
+<h2>Summary of Improvements</h2>
+
+<p>
+Overall, the enhancements focused on improving security, reliability, and code organization. These changes demonstrate a better understanding of secure coding practices, input validation, and software design principles.
 </p>
 
 </div>

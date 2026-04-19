@@ -1,97 +1,46 @@
-
 <!DOCTYPE html>
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: #e2e8f0;
-}
-
-.nav {
-    background: #020617;
-    padding: 15px;
-    text-align: center;
-}
-
-.nav a {
-    color: #38bdf8;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-}
-
-.card {
-    background: #1e293b;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-</style>
 <html>
 <head>
-<title>Database Enhancement</title>
+<title>Database</title>
+
+<style>
+body { margin:0; font-family:Arial; background:#0f172a; color:#e2e8f0; }
+.nav { background:#020617; padding:15px; text-align:center; }
+.nav a { color:#38bdf8; margin:0 15px; text-decoration:none; }
+.container { max-width:900px; margin:auto; padding:20px; }
+.card { background:#1e293b; padding:20px; margin-bottom:20px; border-radius:10px; }
+</style>
+
 </head>
 
-<body style="font-family: Arial; max-width: 900px; margin: auto;">
+<body>
 
-<h1>Database Integration Enhancement</h1>
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="cs410.html">CS410</a>
+<a href="algorithms.html">Algorithms</a>
+<a href="database.html">Database</a>
+<a href="codereview.html">Code Review</a>
+</div>
 
-<a href="index.html">← Back to Home</a>
+<div class="container">
+
+<div class="card">
+<h1>Database Enhancement</h1>
 
 <h2>Overview</h2>
-<p>
-This project enhances a customer management system by implementing persistent data storage and full CRUD operations.
-</p>
-
-<h2>Enhancements</h2>
-<ul>
-<li>Implemented file-based database using customers.txt</li>
-<li>Added Create, Read, Update, and Delete functionality</li>
-<li>Ensured data persistence across program sessions</li>
-<li>Resolved file path and environment-related issues</li>
-</ul>
-
-<h2>Skills Demonstrated</h2>
-<ul>
-<li>File handling in C++</li>
-<li>Database concepts (CRUD operations)</li>
-<li>Debugging and problem-solving</li>
-<li>System design and data management</li>
-</ul>
+<p>This project adds persistent storage to a customer system.</p>
 
 <h2>Code</h2>
-<p>
-<a href="PASTE_YOUR_GITHUB_LINK_HERE">View Project Code</a>
-</p>
+<p><a href="PASTE_GITHUB_LINK" target="_blank">View Code</a></p>
 
 <h2>Narrative</h2>
-
 <p>
-The artifact selected for this milestone is a Customer Management System developed in C++. This application allows users to log in, view, add, update, and delete customer data.
+I implemented file-based storage and CRUD operations, allowing data to persist across sessions.
 </p>
 
-<p>
-Originally, the system stored data in memory, which meant all information was lost after the program ended. To improve this, I implemented file-based persistence, allowing data to be saved and reloaded across sessions.
-</p>
+</div>
 
-<p>
-I added full CRUD functionality, including the ability to create, read, update, and delete records. This enhancement reflects real-world database behavior and significantly improves system usability.
-</p>
-
-<p>
-During development, I encountered challenges related to file paths and system environments. Resolving these issues strengthened my debugging and problem-solving skills.
-</p>
-
-<p>
-This project demonstrates my ability to implement database concepts, improve existing systems, and manage data effectively.
-</p>
-
+</div>
 </body>
 </html>

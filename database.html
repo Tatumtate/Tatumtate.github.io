@@ -34,63 +34,74 @@ body { margin:0; font-family:Arial; background:#0f172a; color:#e2e8f0; }
 <h2>Code</h2>
 <p><a href="https://github.com/Tatumtate/CS-410/blob/main/Milestone3.cpp" target="_blank">View Code</a></p>
 
-<h2>Detailed Code Analysis</h2>
+<h2>Narrative</h2>
+
+<h3>Artifact Description</h3>
+<p>
+The artifact selected for this milestone is a Customer Management System developed in C++.
+This application allows users to authenticate and manage customer records through a
+menu-driven interface, including viewing, adding, updating, and deleting customer data.
+</p>
 
 <p>
-The final version of the system introduces persistent data storage, transforming the application
-from a temporary in-memory system into a database-driven solution. This represents the most significant
-enhancement of the project.
+In its original form, the application stored data in memory using a vector, meaning all
+data was lost when the program terminated. While functional, it lacked persistence and did
+not reflect real-world data management systems.
+</p>
+
+<h3>Justification for Inclusion</h3>
+<p>
+This artifact was selected because it provided a strong foundation for implementing
+database-related enhancements. The system already supported basic data manipulation,
+making it ideal for adding persistent storage and improving functionality.
 </p>
 
 <ul>
+<li>Implemented file-based data persistence using a structured text file</li>
+<li>Loaded data at program start and saved updates during execution</li>
+<li>Added full CRUD functionality (Create, Read, Update, Delete)</li>
+<li>Standardized file path usage to ensure consistent data access</li>
+</ul>
 
-<li>
-<strong>File-Based Database Implementation:</strong>
-The system now uses file handling through ifstream and ofstream to store and retrieve customer data.
-This allows data to persist across program executions, simulating real-world database behavior.
-</li>
+<p>
+These enhancements transformed the application into a more realistic and reliable system,
+demonstrating key database concepts such as persistence and structured data management.
+</p>
 
-<li>
-<strong>Data Loading Mechanism:</strong>
-The LoadCustomersFromFile function reads structured data from a text file and populates a vector of
-Customer objects. This ensures that previously saved data is restored when the program starts.
-</li>
+<h3>Course Outcomes Alignment</h3>
+<p>
+This project demonstrates my ability to design and evaluate computing solutions by
+introducing persistent storage and managing data beyond runtime. It reflects my ability
+to apply appropriate tools and techniques to solve real-world problems.
+</p>
 
-<li>
-<strong>Data Saving Mechanism:</strong>
-The SaveCustomersToFile function writes customer data back to the file after any modification.
-This ensures that all changes, such as adding or updating customers, are permanently stored.
-</li>
+<p>
+Additionally, I improved my ability to develop organized and maintainable code while
+enhancing an existing system to meet new requirements.
+</p>
 
-<li>
-<strong>CRUD Functionality:</strong>
-The system supports Create, Read, and Update operations through AddCustomer, ViewCustomers, and
-UpdateCustomer functions. These operations reflect core database concepts used in real applications.
-</li>
+<h3>Reflection on the Enhancement Process</h3>
+<p>
+This enhancement helped me develop a deeper understanding of data persistence and how
+applications manage information across sessions. Moving from in-memory storage to file-based
+storage made the system more practical and aligned with real-world applications.
+</p>
 
-<li>
-<strong>Dynamic Data Management:</strong>
-By using a vector to store customer records, the program can dynamically grow and manage data efficiently.
-This improves scalability compared to static approaches.
-</li>
+<p>
+One of the main challenges was ensuring consistent file access. Issues with file paths and
+environment-specific directories initially caused data inconsistencies. Resolving this
+required careful debugging and a better understanding of execution environments.
+</p>
 
-<li>
-<strong>Input Handling Improvements:</strong>
-The program uses getline and input validation techniques to correctly capture user input, preventing
-errors caused by leftover input in the buffer.
-</li>
+<p>
+Another challenge involved properly handling user input to ensure data was stored correctly.
+Addressing these issues improved both reliability and usability.
+</p>
 
-<li>
-<strong>Error Handling:</strong>
-The system checks if the file opens correctly before writing, preventing crashes and improving reliability.
-</li>
-
-<li>
-<strong>Default Data Initialization:</strong>
-If no database file is found, the system initializes default customer data and saves it automatically,
-ensuring the program always has usable data.
-</li>
-
+<p>
+Overall, this project strengthened my understanding of CRUD operations, data persistence,
+and structured data handling, while improving my ability to troubleshoot and refine systems.
+</p>
 </ul>
 
 <h2>Summary of Enhancements</h2>
